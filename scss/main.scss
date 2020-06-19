@@ -1,0 +1,43 @@
+@import "colors";
+@import "typography";
+@import "layout";
+@import "buttons";
+@import "header";
+@import "sec-01";
+@import "sec-02";
+@import "sec-03";
+@import "sec-04";
+@import "sec-05";
+@import "sec-06";
+@import "sec-07";
+@import "sec-10";
+@import "footer";
+
+/* GLOBAL */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CUSTOM */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 10px;
+  scroll-behavior: smooth;
+  font-family: $sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol,
+ul {
+  list-style: none;
+}

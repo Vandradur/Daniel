@@ -1,0 +1,113 @@
+/* ==========================================================================
+BUTTON STYLES
+========================================================================== */
+
+@mixin btn_spl {
+    text-decoration: none;
+    color: #222;
+    color: $black-02;
+    margin: auto;
+    display: inline-block;
+    padding: 1rem 2.2rem;
+    line-height: 20px;
+    font-size: 1.3rem;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 1px;
+    text-transform: uppercase;
+    background: rgb(238, 181, 59);
+    background-color: $primary-03;
+    box-shadow: 0px 15px 18px -14px #3333;
+    transition: all 0.4s;
+    cursor: pointer;
+    outline: none;
+}
+
+@mixin btn_spl_hover {
+    background-color: $primary-02;
+    box-shadow: 0px 22px 19px -14px $black;
+    transform: scale(1.02, 1.02);
+}
+
+@mixin btn_spl_active {
+    background-color: $primary-02;
+    box-shadow: 0px 12px 18px -4px rgba(17, 17, 7, 0.9);
+    transform: scale(0.95, 0.95);
+    transition: all 0.4s -0.125s;
+}
+
+// PRIMARY
+
+@mixin btn_primary {
+    display: inline-block;
+    font-size: $font-size-button;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $black;
+    background: rgb(215, 218, 53);
+    background-color: $primary-02;
+    padding: 20px;
+    text-decoration: none;
+    line-height: 1;
+    box-shadow: $box-shadow-03;
+    cursor: pointer;
+    outline: none;
+    transition: .4s;
+}
+
+@mixin btn_primary_hover {
+    background-color: $white;
+    box-shadow: $box-shadow-05;
+}
+
+@mixin btn_primary_active {
+    background-color: $primary-02;
+}
+
+// SECONDARY
+
+@mixin btn_secondary {
+    display: inline-block;
+    font-size: $font-size-button;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $black;
+    background: #d84222ff;
+    background-color: $primary-02;
+    padding: 10px;
+    text-decoration: none;
+    line-height: 1;
+    box-shadow: $box-shadow-03;
+    cursor: pointer;
+    outline: none;
+    transition: .4s;
+}
+
+@mixin btn_secondary_hover {
+    background: #e3924dff;
+    background-color: $primary-02;
+    box-shadow: $box-shadow-05;
+}
+
+@mixin btn_secondary_active {
+    background-color: $primary-02;
+}
+
+
+//   SPECIAL HOVER EFFECTS
+
+@mixin spl_hover_effect {
+    background: rgb(69, 98, 107);
+    background-color: $secondary-02;
+    box-shadow: 0px 22px 19px -14px $black;
+    transform: scale(1.01, 1.01);
+}
+
+@mixin spl_hover_effect-02 {
+    background: rgb(82, 121, 228);
+    background-color: $daniel-black;
+    box-shadow: 0px 22px 19px -14px $black;
+    transform: scale(1.01, 1.01);
+}

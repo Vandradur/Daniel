@@ -1,0 +1,136 @@
+.sec-05 {
+    //position: relative;
+    @include flexCenter;
+    flex-wrap: wrap;
+    background-color: $daniel-yellow;
+
+    .container {
+        // position: relative;
+        @include flexCenter;
+        flex-wrap: wrap;
+        flex-direction: column;
+        box-shadow: $box-shadow-04;
+        border-radius: 0.1rem;
+        transition: 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
+        color: rgb(245, 213, 33);
+        color: #fff;
+        background: $white-02;
+        overflow: hidden;
+        width: 100%;
+        margin: 4px 10px;
+
+        @include desktop690 {
+            width: 95%;
+        }
+
+        &__img {
+            position: relative;
+            width: 100%;
+            height: 20rem;
+            left: 0;
+
+            @include desktop690 {
+                width: 50%;
+                height: 39rem;
+            }
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &__contentBox { 
+            position: relative;
+            width: 100%;
+            height: auto;
+            right: 0;
+            padding: 1rem;
+
+            @include desktop690 {
+                right: 0;
+                width: 50%;
+                height: 39rem;
+                @include flexCenter;
+                flex-direction: column;
+                padding: 2rem 1.2rem;
+            }
+
+            .contentBox__title {
+                @include h3Text;
+                position: relative;
+
+                span {
+                    color: rgb(210, 233, 4);
+                    color: $primary-02;
+                }
+            }
+
+            .contentBox__text {
+                position: relative;
+                @include bodyText;
+                margin-top: 1rem;
+
+                .tooltip__holder {
+                    position: relative;
+                    color: rgb(190, 190, 22);
+                    // color: $yellow-2;
+                    cursor: pointer;
+                    transition: 0.3s;
+                    text-align: center;
+
+                    &:hover {
+                        color: #fff;
+                        color: $white;
+                    }
+
+                    .tooltip {
+                        background: #fff;
+                        // background: $dirty-white;
+                        color: #333;
+                        // color: $black-light-2;
+                        position: absolute;
+                        bottom: 10px;
+                        margin-left: -90%;
+                        padding: 19px;
+                        visibility: hidden;
+                        opacity: 0;
+                        transition: 0.4s;
+                        transform: translateX(-30%) translateY(-30px);
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            width: 20px;
+                            height: 20px;
+                            background: #fff;
+                            //background: $dirty-white;
+                            bottom: -10px;
+                            left: 50%;
+                            transform: rotate(45deg);
+                        }
+                    }
+
+                    &:hover .tooltip {
+                        visibility: visible;
+                        opacity: 0.98;
+                        transform: translateX(-30%) translateY(0px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.container:nth-child(odd) {
+    flex-direction: row;
+}
+
+.container:nth-child(even) {
+    flex-direction: row-reverse;
+    text-align: right;
+}

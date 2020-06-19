@@ -1,0 +1,54 @@
+/* ==========================================================================
+FOOTER
+========================================================================== */
+
+.footer {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: rgb(30, 30, 228);
+    background: $daniel-blue;
+    border-top: 2px solid $primary;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    @include desktop480 {
+
+        flex-direction: row;
+
+    }
+
+    .single-footer {
+        text-align: left;
+
+        h4 {
+            font-size: 14px;
+            letter-spacing: .2rem;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 5px;
+            margin-bottom: -2px;
+            color: $daniel-yellow;
+            border-bottom: 2px solid #fff;
+
+        }
+
+        ul {
+
+            padding: 15px;
+            margin-top: 1px;
+        }
+
+        li:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        a {
+            font-size: 14px;
+            color: rgba(#fff, .73);
+        }
+    }
+}

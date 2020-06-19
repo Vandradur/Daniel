@@ -1,0 +1,63 @@
+/* ==========================================================================
+SECTION 03
+========================================================================== */
+
+.sec-03 {
+    width: 100%;
+    background: $white-03;
+    //margin-top: 2rem;
+    // margin: 0 auto;
+    padding: 0.5rem;
+
+    .carousel-wrapper {
+        // margin: 2% auto 0;
+        // padding: 1rem;
+
+        &__card {
+            text-align: center;
+            background: #fff;
+            padding: 2rem;
+            border: 1px solid $white-02;
+            box-shadow: $box-shadow-04;
+            height: 43rem;
+            position: relative;
+
+            &__img {
+
+                width: 160px;
+                height: 160px;
+
+                background-size: cover;
+                background-position: center center;
+                margin: 0 auto;
+
+                //margin-bottom: 10px;
+            }
+
+            p {
+                @include bodyText;
+                margin: 1.2rem;
+            }
+
+            .header-text {
+                @include h2Text;
+                margin: 0;
+
+            }
+
+
+
+            .button {
+                @include btn_spl;
+                margin-bottom: 8px;
+
+                &:hover {
+                    @include btn_spl_hover;
+                }
+            }
+
+        }
+
+
+    }
+}

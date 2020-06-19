@@ -1,0 +1,42 @@
+/* ==========================================================================
+LAYOUT
+========================================================================== */
+
+
+$desktop480: 480px;
+$desktop690: 690px;
+$desktop767: 767px;
+
+@mixin desktop767 {
+    @media (min-width: #{$desktop767}) {
+        @content;
+    }
+}
+
+@mixin desktop690 {
+    @media (min-width: #{$desktop690}) {
+        @content;
+    }
+}
+
+@mixin desktop480 {
+    @media (min-width: #{$desktop480}) {
+        @content;
+    }
+}
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+$section-padding-regular: 125px 0;
+$section-padding-tall: 160px 0;
+
+
+section {
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 100%;
+}

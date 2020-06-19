@@ -1,0 +1,79 @@
+/* ==========================================================================
+SECTION 02
+========================================================================== */
+
+
+.sec-02 {
+
+    width: 100%;
+
+    .card-container {
+
+        @include flexCenter;
+        flex-wrap: wrap;
+
+
+        &__card {
+            @include flexCenter;
+            position: relative;
+            flex-direction: column;
+            width: 300px;
+            height: auto;
+            background: $white-02;
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
+            transition: 0.3s;
+
+            &__img {
+                @include flexCenter;
+                width: 100px;
+                height: 100px;
+                border: 6px solid $white-02;
+                background-size: cover;
+                background-position: center center;
+                display: block;
+                box-shadow: $box-shadow-04;
+                margin-bottom: 10px;
+            }
+        }
+
+        &__text {
+            .header-text {
+                @include h2Text480;
+
+            }
+
+            p {
+                @include bodyText;
+                margin: .7rem;
+            }
+        }
+    }
+
+
+
+    .button {
+        @include btn_spl;
+
+        &:hover {
+            @include btn_spl_hover;
+        }
+    }
+}
+
+.card-container__card:nth-child(1) .card-container__card__img {
+    background-image: url(../img/mosquito-art.jpg);
+}
+
+.card-container__card:nth-child(2) .card-container__card__img {
+    background-image: url(../img/danielLogo2.png);
+}
+
+.card-container__card:nth-child(3) .card-container__card__img {
+    background-image: url(../img/danielLogo3.png);
+}
+
+.card-container__card:nth-child(4) .card-container__card__img {
+    background-image: url(../img/ichs-1-2.jpg);
+}
