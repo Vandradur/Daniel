@@ -41,6 +41,7 @@ header {
                 background: #222;
                 background-color: $gray-03;
                 width: 270px;
+                margin-bottom: .3rem;
 
                 @include desktop690 {
                     flex-direction: row;
