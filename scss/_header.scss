@@ -3,7 +3,6 @@ HEADER
 ========================================================================== */
 header {
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -28,7 +27,6 @@ header {
 
             @include desktop690 {
                 padding: 12rem 6rem;
-                height: 120%;
             }
 
             &__card {
@@ -43,7 +41,7 @@ header {
                 background: #222;
                 background-color: $gray-03;
                 width: 270px;
-                margin-bottom: .3rem;
+                margin-bottom: 1rem;
 
                 @include desktop690 {
                     flex-direction: row;
