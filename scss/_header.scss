@@ -171,10 +171,12 @@ header {
     }
 
     .bar::before {
+         position: relative;
         top: -2rem;
     }
 
     .bar::after {
+         position: relative;
         top: 1rem;
     }
 }
